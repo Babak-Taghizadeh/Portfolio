@@ -1,11 +1,17 @@
+"use client"
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Avatar from "@/public/assets/Babi.jpg";
+import { motion, AnimatePresence } from "framer-motion";
 import { IoCloudDownload } from "react-icons/io5";
 
 export default function AboutMe() {
   return (
-    <div className="flex flex-col items-center gap-5">
+    <motion.div
+      id="about" 
+      initial={{ opacity: 0 }}
+      whileInView={{opacity: 1}}
+      className="flex flex-col items-center gap-5">
       <Image
         src={Avatar}
         width={300}
@@ -64,6 +70,6 @@ export default function AboutMe() {
           connect and create something magical together! ✨
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

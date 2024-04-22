@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdMenu } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
+import { Contact } from "./Contact";
+import Link from "next/link";
 
 const DrawerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,14 +59,15 @@ const DrawerMenu = () => {
             animate="open"
             exit="closed"
             variants={variants}
-            className="fixed right-0 top-20 z-10 h-screen w-36 rounded bg-neutral"
+            className="fixed right-0 top-20 z-10 flex h-screen w-36 flex-col justify-between rounded bg-neutral pb-28"
           >
             <ul className="mt-5 flex flex-col items-center gap-5">
-              <li>About</li>
-              <li>Projects</li>
-              <li>Skills</li>
-              <li>Contact</li>
+              <li><Link href="#about">About</Link></li>
+              <li><Link href="#skills">Skills</Link></li>
+              <li><Link href="#projects">Projects</Link></li>
+              {/* <li>Contact</li> */}
             </ul>
+            <Contact />
           </motion.nav>
         )}
       </AnimatePresence>

@@ -25,7 +25,8 @@ export const Skills = () => {
   ];
 
   return (
-    <div>
+    <div
+    id="skills" >
       <h1 className="text-center text-2xl font-extrabold">Skills:</h1>
       <ul className="grid grid-cols-3 gap-6 mt-2">
         {icons.map((Item, index) => {
