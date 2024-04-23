@@ -11,8 +11,8 @@ const antonio = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Babak Taghizadeh",
-  description: "Welcome",
+  title: "Babak Taghizadeh | Portfolio",
+  description: "Frontend developer - NextJs | Explore the creative work of Babak, showcasing a diverse range of design and development projects. ",
 };
 
 export default function RootLayout({
