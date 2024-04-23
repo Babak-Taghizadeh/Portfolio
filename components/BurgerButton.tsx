@@ -59,7 +59,7 @@ const DrawerMenu = () => {
             animate="open"
             exit="closed"
             variants={variants}
-            className="fixed right-0 top-20 z-10 flex h-screen w-36 flex-col justify-between rounded bg-neutral pb-48 md:pb-32"
+            className="fixed right-0 top-20 z-10 flex h-[calc(100vh-5rem)] w-36 flex-col justify-between rounded bg-neutral pb-48 md:pb-32"
           >
             <ul className="mt-5 flex flex-col items-center gap-5">
               <li><Link href="#about">About</Link></li>
