@@ -1,7 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import Avatar from "@/public/assets/Babak.jpg";
+import Avatar from "@/public/Babak.jpg";
 import { IoCloudDownload } from "react-icons/io5";
+import Link from "next/link";
 
 export default function AboutMe() {
   return (
@@ -16,10 +16,10 @@ export default function AboutMe() {
           alt="avatar"
           className="rounded-full"
         />
-        <button className="btn btn-secondary">
+        <Link href="/Babak-Taghizadeh-CV.pdf" className="btn btn-secondary">
           Download CV
           <IoCloudDownload size={20} color="aqua" />
-        </button>
+        </Link>
       </div>
       <div className="flex flex-col gap-3 text-lg xl:w-2/3">
         <p>
