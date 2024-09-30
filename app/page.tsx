@@ -4,8 +4,8 @@ import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="mx-4 mt-20 mb-4 flex min-h-screen flex-col items-center gap-10 rounded-2xl bg-primary p-5">
-      <AboutMe/>
+    <div className="mb-4 mt-20 flex min-h-screen flex-col items-center gap-10 rounded-2xl bg-primary py-20 px-14">
+      <AboutMe />
       <Skills />
       <Projects />
     </div>
